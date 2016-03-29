@@ -1,0 +1,150 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	//Instead of the line below you could use @include box-sizing($bs)
+	box-sizing: border-box;
+	line-height: normal;
+}
+::-webkit-input-placeholder {
+	color: $color_silver_chalice_approx;
+	font-weight: 300;
+}
+::-moz-placeholder {
+	color: $color_silver_chalice_approx;
+	font-weight: 300;
+}
+:-ms-input-placeholder {
+	color: $color_silver_chalice_approx;
+	font-weight: 300;
+}
+body {
+	background: $white;
+	font-family: $font_0, $font_1;
+	font-size: 16px;
+}
+.subtitle {
+	margin-top: 0;
+	margin-left: 0;
+	color: $color_star_dust_approx;
+}
+.container {
+	max-width: 980px;
+	width: 100%;
+	padding: 15px;
+	margin: 0 auto;
+}
+.detailTb {
+	width: 400px;
+}
+
+.single-post {
+	margin: 20px 0;
+	padding: 15px;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+	.post-title {
+		font-size: 28px;
+		margin-bottom: 16px;
+		font-weight: 400;
+		color: $color_storm_dust_approx;
+		a {
+			text-decoration: none;
+			color: $color_storm_dust_approx;
+		}
+	}
+	&.post-detail {
+		.post-title {
+			font-size: 42px;
+			color: $color_tundora_approx;
+		}
+		.post-desc {
+			font-size: 16px;
+			color: $color_fuscous_gray_approx;
+		}
+	}
+	.author-name {
+		font-size: 16px;
+		margin-bottom: 16px;
+		color: $color_tapa_approx;
+	}
+	.post-desc {
+		font-size: 14px;
+		color: $color_suva_gray_approx;
+		margin-bottom: 8px;
+	}
+	.divider {
+		border: 0;
+		height: 1px;
+		background: $color_celeste_approx;
+		width: 250px;
+		margin: 32px auto 0;
+	}
+	.post-action a {
+		color: $color_fuscous_gray_approx;
+		text-decoration: none;
+		font-size: 14px;
+		font-style: italic;
+		&:hover {
+			color: $color_carnation_approx;
+		}
+	}
+}
+.header {
+	background-color: $color_gallery_approx;
+	background-image: $url_0;
+	background-position: center;
+	background-size: cover;
+	border-bottom: 1px solid $color_celeste_approx;
+  min-width: 20%;
+	.list{
+    margin-top: 20px;
+    background-color: transparentize($white, 0.8) !important;
+    svg{
+      color: $white !important;
+      fill: $white !important;
+    }
+  }
+}
+.site-title {
+	font-weight: 300;
+	font-size: 42px;
+}
+.add-post-button {
+	display: inline-block;
+	color: $white;
+	background: $color_cerulean_approx;
+	padding: 8px 16px;
+	text-decoration: none;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 1000px;
+	float: right;
+}
+.footer {
+	text-align: center;
+	padding: 56px 0;
+	background-color: $white;
+	background-image: $url_0;
+	background-position: center;
+	background-size: cover;
+	p {
+		margin: 0 0 8px 0;
+		font-size: 14px;
+		color: $white;
+	}
+	a {
+		color: $white;
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+@media(max-width: 767px) {
+	.add-post-button {
+		float: left;
+		margin-top: 16px;
+	}
+}
+input:-moz-placeholder {
+	color: $color_silver_chalice_approx;
+	font-weight: 300;
+}
